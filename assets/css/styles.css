@@ -420,3 +420,22 @@ summary span{transition:transform 200ms var(--ease-out)}
 .gmap__route{font-size:.9rem;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:2px}
 .gmap-address{font-style:normal;margin-top:16px;color:var(--ink-soft)}
 @media (min-width:768px){.gmap-wrap{grid-template-columns:4fr 7fr;align-items:end}.gmap{aspect-ratio:16/10}}
+
+/* Startseite: Hero über dem Bildrand, Vertrauenszeile, Google-Note */
+@media (min-width:769px){.hero-video-card{width:clamp(220px,min(31vw,calc((100svh - 380px) * .75)),390px)}}
+.hero-sub{max-width:680px}
+.hero-meta{margin-top:18px;font-size:.86rem;line-height:1.6;color:rgba(239,233,222,.72);display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;padding:0 18px}
+.hero-meta a{color:#efe9de;border-bottom:1px solid rgba(239,233,222,.3)}
+.hero-meta a:hover{border-color:#efe9de}
+.hero-meta a span{color:#f0a548;border:0}
+.hero-meta-sep{color:rgba(239,233,222,.4)}
+@media (max-width:768px){.hero-meta-sep{display:none}.hero-meta{flex-direction:column;align-items:center;font-size:.82rem}}
+.header-cta{background:transparent;color:#efe9de;border:1px solid rgba(239,233,222,.35);font-weight:500}
+.header-cta:hover{background:rgba(239,233,222,.08);border-color:#efe9de}
+.g-score{display:flex;align-items:baseline;gap:16px}
+.g-score b{font-family:var(--serif);font-weight:400;font-size:clamp(48px,6vw,72px);line-height:1}
+.g-stars{color:#f0a548;font-size:1.1rem;letter-spacing:2px}
+.g-stars span{opacity:.45}
+.g-meta{margin-top:8px;font-size:.92rem;color:rgba(239,233,222,.68)}
+.g-meta a{color:#efe9de;border-bottom:1px solid rgba(239,233,222,.3)}
+.review-item cite span{opacity:.6}
