@@ -397,7 +397,10 @@ summary span{transition:transform 200ms var(--ease-out)}
 .area__copy h3 span{display:block;font-family:var(--sans);font-size:.88rem;color:var(--muted);margin-top:6px;letter-spacing:0}
 .area__copy p{margin-top:10px;color:var(--ink-soft);max-width:44ch}
 .dotmap{width:100%;height:auto;max-height:620px}
-.linemap{width:100%;height:auto;max-height:600px;overflow:visible}
+.linemap{width:100%;height:auto;max-height:600px;overflow:hidden;border-radius:var(--radius)}
+.linemap .lm-sea{fill:#e8edee}
+.linemap .lm-poi circle{fill:#fff;stroke:#1f1b16;stroke-width:1.5}
+.linemap .lm-poi text{font-family:var(--sans);font-size:17px;fill:#5e554a;paint-order:stroke;stroke:#f3eee6;stroke-width:4px;stroke-linejoin:round}
 .linemap .lm-land{fill:#f3eee6;stroke:#1f1b16;stroke-opacity:.55;stroke-width:1.2;stroke-linejoin:round}
 .linemap .lm-waves path{fill:none;stroke:#1f1b16;stroke-opacity:.18;stroke-width:1.2;stroke-linecap:round}
 .linemap .lm-city{font-family:var(--serif);font-size:34px;fill:#1f1b16;opacity:.7}
@@ -405,7 +408,7 @@ summary span{transition:transform 200ms var(--ease-out)}
 .linemap .lm-pin circle{fill:#f0a548;stroke:#fff;stroke-width:3}
 .linemap .lm-pin .lm-ring{fill:none;stroke:#f0a548;stroke-opacity:.45;stroke-width:1.2}
 .linemap .lm-pin line{stroke:#1f1b16;stroke-opacity:.5;stroke-width:1}
-.linemap .lm-pin text{font-family:var(--serif);font-size:30px;fill:#1f1b16}
+.linemap .lm-pin text{font-family:var(--serif);font-size:30px;fill:#1f1b16;paint-order:stroke;stroke:#e8edee;stroke-width:5px;stroke-linejoin:round}
 .linemap .lm-pin .lm-sub{font-family:var(--sans);font-size:17px;fill:#7b7266}
 .dotmap .dm-dots{fill:var(--ink);opacity:.16}
 .dotmap .dm-pin circle{fill:var(--accent);stroke:var(--bg);stroke-width:4}
