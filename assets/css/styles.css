@@ -98,7 +98,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacin
 .photo-cta-label{font-size:.82rem;font-weight:600;color:var(--gold);margin-bottom:16px}
 .photo-cta-inner h2{font-size:clamp(2.3rem,4.6vw,4.2rem);max-width:820px;margin-bottom:16px}
 .photo-cta-inner p:not(.photo-cta-label){color:rgba(255,255,255,.74);max-width:520px}
-.cta-award .photo-cta-bg{background-image:url('https://images.pexels.com/videos/10238452/cake-decoration-chocolate-chocolate-cake-cream-cheese-10238452.jpeg?auto=compress&cs=tinysrgb&w=1800');background-position:center 55%}
+.cta-award .photo-cta-bg{background-image:url('https://images.pexels.com/photos/907142/pexels-photo-907142.jpeg?auto=compress&cs=tinysrgb&w=1800');background-position:center 55%}
 
 /* Erleben */
 .about{background:#fff}
