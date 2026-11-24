@@ -441,6 +441,12 @@ summary span{transition:transform 200ms var(--ease-out)}
 .review-item cite span{opacity:.6}
 
 /* Bilder nicht abschneiden */
+.subhero-side .hero-meta{flex-direction:column;align-items:flex-start;gap:4px;padding:0;margin-top:16px;font-size:.86rem;max-width:none}
+.subhero-side .hero-meta .hero-meta-sep{display:none}
+.subhero-side .hero-actions{padding:0;margin-left:0;margin-right:0}
+.g-quote{margin:28px 0 0;padding-left:16px;border-left:2px solid #f0a548}
+.g-quote p{font-family:var(--serif);font-size:1.35rem;line-height:1.35}
+.g-quote cite{display:block;margin-top:6px;font-style:normal;font-size:.86rem;color:var(--muted)}
 img.cutout{object-fit:contain!important;background:#fff;padding:6%}
 img.fit{object-fit:contain!important;background:var(--soft)}
 img.fit--dark{background:#1b1a18}
