@@ -439,6 +439,8 @@ summary span{transition:transform 200ms var(--ease-out)}
 .g-meta{margin-top:8px;font-size:.92rem;color:rgba(239,233,222,.68)}
 .g-meta a{color:#efe9de;border-bottom:1px solid rgba(239,233,222,.3)}
 .review-item cite span{opacity:.6}
+.btn-sm{display:none}
+@media (max-width:768px){.btn-lg{display:none}.btn-sm{display:inline}}
 
 /* Bilder nicht abschneiden */
 .subhero-side .hero-meta{flex-direction:column;align-items:flex-start;gap:4px;padding:0;margin-top:16px;font-size:.86rem;max-width:none}
