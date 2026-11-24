@@ -397,6 +397,16 @@ summary span{transition:transform 200ms var(--ease-out)}
 .area__copy h3 span{display:block;font-family:var(--sans);font-size:.88rem;color:var(--muted);margin-top:6px;letter-spacing:0}
 .area__copy p{margin-top:10px;color:var(--ink-soft);max-width:44ch}
 .dotmap{width:100%;height:auto;max-height:620px}
+.linemap{width:100%;height:auto;max-height:600px;overflow:visible}
+.linemap .lm-land{fill:#f3eee6;stroke:#1f1b16;stroke-opacity:.55;stroke-width:1.2;stroke-linejoin:round}
+.linemap .lm-waves path{fill:none;stroke:#1f1b16;stroke-opacity:.18;stroke-width:1.2;stroke-linecap:round}
+.linemap .lm-city{font-family:var(--serif);font-size:34px;fill:#1f1b16;opacity:.7}
+.linemap .lm-water{font-family:var(--sans);font-size:17px;letter-spacing:.02em;fill:#7b7266}
+.linemap .lm-pin circle{fill:#f0a548;stroke:#fff;stroke-width:3}
+.linemap .lm-pin .lm-ring{fill:none;stroke:#f0a548;stroke-opacity:.45;stroke-width:1.2}
+.linemap .lm-pin line{stroke:#1f1b16;stroke-opacity:.5;stroke-width:1}
+.linemap .lm-pin text{font-family:var(--serif);font-size:30px;fill:#1f1b16}
+.linemap .lm-pin .lm-sub{font-family:var(--sans);font-size:17px;fill:#7b7266}
 .dotmap .dm-dots{fill:var(--ink);opacity:.16}
 .dotmap .dm-pin circle{fill:var(--accent);stroke:var(--bg);stroke-width:4}
 .dotmap .dm-pin text{font:500 22px/1 var(--sans);fill:var(--ink);paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
