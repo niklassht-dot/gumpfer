@@ -97,30 +97,9 @@ if (slideCard) {
   }
 }
 
-// Aufwind-Sektionen: Ticker, Text-Reveal, Punktkarte, Google Maps
+// Aufwind-Sektionen: Text-Reveal, Punktkarte, Google Maps
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  /* 1 · Bild-Ticker */
-  document.querySelectorAll('[data-ticker]').forEach(function(root){
-    if (reduce) return;
-    var track = root.querySelector('.ticker__track');
-    var originals = [].slice.call(track.children), n = originals.length;
-    function addSet(){ originals.forEach(function(el){ var c = el.cloneNode(true); c.setAttribute('aria-hidden','true'); c.querySelectorAll('img').forEach(function(i){ i.alt=''; }); track.appendChild(c); }); }
-    addSet();
-    while (track.scrollWidth < root.clientWidth * 2.5) addSet();
-    var speed = +root.dataset.speed || 24, cur = speed, target = speed, x = 0, last = 0, visible = true;
-    function period(){ return track.children[n].offsetLeft - track.children[0].offsetLeft; }
-    root.addEventListener('mouseenter', function(){ target = 0; });
-    root.addEventListener('mouseleave', function(){ target = speed; });
-    new IntersectionObserver(function(e){ visible = e[0].isIntersecting; }).observe(root);
-    function frame(t){
-      var dt = last ? Math.min(t - last, 50) / 1000 : 0; last = t;
-      cur += (target - cur) * .08;
-      if (visible){ x -= cur * dt; var p = period(); if (p > 0 && -x >= p) x += p; track.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)'; }
-      requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  });
   /* 2 · Scroll-Text-Reveal */
   var reveals = [];
   document.querySelectorAll('[data-reveal]').forEach(function(el){
